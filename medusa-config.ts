@@ -20,12 +20,8 @@ module.exports = defineConfig({
       adminCors: process.env.ADMIN_CORS!,
       authCors: process.env.AUTH_CORS!,
       // database_extra: { ssl: { rejectUnauthorized: false } },
-      jwtSecret:
-        process.env.JWT_SECRET ||
-        "e088f0d65f2cde7ee7c7a19dd63c1fa4f7d24e3f0f8e1729e53b0c6f35131242",
-      cookieSecret:
-        process.env.COOKIE_SECRET ||
-        "0b64ac5e93bbdec094be71eb55e119492443782a72d171a666bfd38ac29d1a22",
+      jwtSecret: process.env.JWT_SECRET || "supersecret",
+      cookieSecret: process.env.COOKIE_SECRET || "supersecret",
     },
   },
 });
